@@ -1,0 +1,108 @@
+/* Base Page Styling */
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+
+body {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Table Architecture */
+table {
+  border-collapse: collapse;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  margin: 30px auto;
+  background-color: #111827;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+caption {
+  padding: 15px;
+  font-style: italic;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 12px 18px;
+  border: 1px solid #1f2937;
+}
+
+/* Table Headers (Top Row) */
+thead th {
+  background-color: #1e1b4b; /* Deep cosmic indigo */
+  color: #6366f1;            /* Neon indigo text */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #4f46e5;
+}
+
+/* Category Sidebar Headers (Terrestrial, Jovian, etc.) */
+tbody th[scope="rowgroup"] {
+  background-color: #0f172a; 
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+/* Planet Names Highlight */
+tbody th[scope="row"] {
+  background-color: #1e293b;
+  color: #38bdf8; /* Bright electric blue */
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Center data cells */
+td {
+  text-align: center;
+  color: #cbd5e1;
+}
+
+/* Zebra Striping for Easy Reading */
+tbody tr:nth-child(even) td {
+  background-color: #161e2e;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #111827;
+}
+
+/* Row Hover Glow Effect */
+tbody tr:hover td, 
+tbody tr:hover th[scope="row"] {
+  background-color: #1e293b !important;
+  color: #ffffff;
+}
+
+/* Links inside notes */
+table a {
+  color: #a855f7;
+  text-decoration: none;
+  border-bottom: 1px dashed #a855f7;
+}
+
+table a:hover {
+  color: #e879f9;
+  border-bottom-style: solid;
+}
+
+/* The Black Boundary Class around the Names Column */
+.column-border {
+  border-left: 2px solid #38bdf8 !important;
+  border-right: 2px solid #38bdf8 !important;
+}
